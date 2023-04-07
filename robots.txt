@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /
+Disallow: /404.php 
+Disallow: /pages/policy/ 
+Disallow: /pages/personal/
+Disallow: /pages/cookie/
+Disallow: /backend/
+Disallow: /uploads/
+Host: https://web6949.ww.net.ru
+Sitemap: https://web6949.ww.net.ru/sitemap.xml

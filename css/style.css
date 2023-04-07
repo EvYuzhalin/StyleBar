@@ -1,0 +1,638 @@
+/* fonts */
+@font-face {
+	font-family: 'Russian Land Cyrillic Sinod';
+	src:
+		url('/css/fonts/russianlandcyrillicsinod.otf') format('truetype');
+    font-style: normal; 
+    font-weight: 400;
+}
+
+@font-face {
+	font-family: 'inglobal';
+	src:
+		url('/css/fonts/inglobal.ttf') format('truetype');
+    font-style: normal; 
+    font-weight: 400;
+}
+
+
+/* @font-face {
+	font-family: 'Nunito Sans';
+	src: url('/css/fonts/centurygothic.eot');
+	src: url('/css/fonts/centurygothic.eot?#iefix') format('embedded-opentype'),
+		url('/css/fonts/centurygothic.woff2') format('woff2'),
+		url('/css/fonts/CenturyGothic.woff') format('woff'),
+		url('/css/fonts/CenturyGothic.ttf') format('truetype'),
+		url('/css/fonts/CenturyGothic.svg#CenturyGothic') format('svg');
+    font-style: normal; 
+    font-weight: 400;
+}
+@font-face {
+	font-family: 'Nunito Sans';
+	src: url('/css/fonts/centurygothic_bold.eot');
+	src: url('/css/fonts/centurygothic_bold.eot?#iefix') format('embedded-opentype'),
+		url('/css/fonts/centurygothic_bold.woff2') format('woff2'),
+		url('/css/fonts/CenturyGothic-Bold.woff') format('woff'),
+		url('/css/fonts/CenturyGothic-Bold.ttf') format('truetype'),
+		url('/css/fonts/CenturyGothic-Bold.svg#CenturyGothic-Bold') format('svg');
+    font-style: normal; 
+    font-weight: 600;
+} */
+/* *******  */
+
+
+/* settings styles */
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100vh;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+    margin: 0;
+    background: #FDFDFD;
+    scroll-behavior: smooth;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+li {list-style-type: none;}
+
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.flex {
+    display: flex;
+}
+
+/* *******  */
+
+
+
+/* header блок стили */
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    padding: 13px 30px;
+}
+.header_filter {
+    backdrop-filter: blur(16.20px);
+}
+.header__box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__box_item {
+    display: flex;
+    align-items: center;
+}
+.header__box_item_gap {
+    gap: 13px;
+}
+.header__title {
+    font-family: 'Russian Land Cyrillic Sinod';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.881px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.header__adress {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    color: #FFFFFF;
+    text-align: right;
+}
+.header__phone_link {
+    background: #083400;
+    border-radius: 3px;
+    width: 33px;
+    height: 28px;
+}
+
+
+/* *******  */
+
+/* pages style */
+
+.desktop__mainBlock {
+    width: 100%;
+    height: 100%;
+    background: #333333;
+    background-image: url(/css/img/bg_desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.desktop__mainBlock_title {
+    font-family: 'Russian Land Cyrillic Sinod';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 105px;
+    color: #FFFFFF;
+}
+.desktop__mainBlock_phone {
+    font-family: 'Russian Land Cyrillic Sinod';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    color: #FFFFFF;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.desktop__mainBlock_phone:hover {
+    color: #a30f0f; 
+}
+.desktop__mainBlock_addres {
+    font-family: 'Russian Land Cyrillic Sinod';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    color: #FFFFFF;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.mobile__mainBlock {
+    width: 100%;
+    /* height: 100%; */
+    background: linear-gradient(180deg, #101010 50%, #7E0000 100%);
+    background-image: url(/css/img/bg_mobile.png);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+}
+.why__image {
+    max-width: 292.26px;
+    width: 100%;
+    margin-top: 83px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.why__image img {
+    width: 100%;
+}
+.why__image_text {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.click__button {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    background: #7E0000;
+    border-radius: 3px;
+    width: 105px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.click__button_mg {
+    margin-top: 30px;
+}
+.about__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 117px;
+}
+.about__block_title {
+    font-family: 'Russian Land Cyrillic Sinod';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 133%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.about__block_subtitle {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133%;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.7;
+    max-width: 241px;
+    width: 100%;
+}
+.slider__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.slider__block_title {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.slider__box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.slider__block_titleBottom {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133%;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.6;
+    margin-top: 20px;
+}
+.merch__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+.merch_block_title {
+    font-family: 'Russian Land Cyrillic Sinod';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 133%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.merch__slider {
+    display: flex;
+}
+.contacts__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+.contacts__block_title {
+    font-family: 'Russian Land Cyrillic Sinod';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 133%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.contacts__block_subtitle {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.6;
+    margin-bottom: 5px;
+}
+.contacts__block_adress {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133%;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.contacts__block_phone {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.contacts__block_time {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer__box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 33px;
+}
+.footer__boxContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.social_text {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+.footer__boxContent_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+
+/* *******  */
+
+
+
+
+/* policy 404 cookie  */
+
+.box__404 {
+    display: flex;
+    flex-direction: column;
+}
+.box__404_textBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.box__404_textBox_title {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #333333;
+}
+.box__404_textBox_button {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #028321;
+    margin-top: 50px;
+}
+
+.section_personal {
+    padding-top: 40px;
+  }
+  .main {
+    margin-top: 40px;
+  }
+  .policy {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .policy__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .policy__heading, .personal_title {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .policy__block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .policy__title {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .policy__text {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .policy__subtitle {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px
+  }
+  .policy__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .policy__item {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    list-style-type: disc;
+  }
+  .policy__block-mini {
+    display: flex;
+    flex-direction: column;
+  }
+  .container_main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .politics_info_subtitle {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .personal_info {
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+  }
+/*куки*/
+.cookie {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 13px 50px;
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #333333;
+    font-size: 1.3em;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 1000;
+    align-items: center;
+}
+.cookie__wrapper {
+    display: flex;
+    margin-right: 20px;
+    color: #333333;
+    align-items: center;
+}
+.cookie__wrapper p {
+    margin-right: 5px;
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+}
+.cookie__wrapper a {
+    color: #333333;
+    text-decoration: none;
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+}
+.cookie__wrapper a:hover {
+    color: #C94032;
+    text-decoration: underline;
+}
+.cookie__btn {
+    color: #C94032;
+    cursor: pointer;
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+}
+.cookie__close {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-46%);
+    width: 12px;
+    cursor: pointer;
+    font-family: 'inglobal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+}
+.section_personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_main {
+    max-width: 1170px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.personal_title {
+    font-size: 28px;
+}
+.politics_info_subtitle {
+    font-size: 23px;
+}
+.section_personal {
+    display: flex;
+    flex-direction: column;
+}
+.container_main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* *******  */
+

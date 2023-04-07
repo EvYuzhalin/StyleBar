@@ -1,0 +1,19 @@
+# RewriteEngine On
+
+# RewriteCond %{HTTPS} !=on
+# RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+# RewriteCond %{HTTP_HOST} ^www.web4.ww.net.ru$ [NC]
+# RewriteRule ^(.*)$ https://web4.ww.net.ru/$1 [R=301,L]
+
+# RewriteRule ^index\.php$ https://web4.ww.net.ru/ [L,R=301]
+
+# RewriteCond %{REQUEST_URI} ^(.*)/index.php$
+# RewriteRule ^(.*)$ %1/ [R=301,L]
+
+# ErrorDocument 404 https://web6949.ww.net.ru/404.php
+
+# Order deny,allow
+# Deny from all
+#Allow from 188.186.178.47
+#Allow from 185.54.237.42

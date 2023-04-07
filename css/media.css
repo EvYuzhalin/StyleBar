@@ -1,0 +1,34 @@
+/* pages style  */
+
+@media (max-width: 1024px) {
+    .desktop__mainBlock {
+        display: none;
+    }
+    .header {
+        display: flex;
+    }
+    .footer__box {
+        display: flex;
+    }
+    .mobile__mainBlock {
+        display: flex;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .desktop__mainBlock {
+        display: flex;
+    }
+    .header {
+        display: none;
+    }
+    .footer__box {
+        display: none;
+    }
+    .mobile__mainBlock {
+        display: none;
+    }
+}
+
+/* ******  */
