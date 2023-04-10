@@ -110,6 +110,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     padding: 13px 30px;
 }
 .header_filter {
+    -webkit-backdrop-filter: blur(16.20px);
     backdrop-filter: blur(16.20px);
 }
 .header__box {
