@@ -130,8 +130,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     font-family: 'Russian Land Cyrillic Sinod';
     font-style: normal;
     font-weight: 400;
-    font-size: 16.881px;
-    line-height: 17px;
+    font-size: 23px;
+    line-height: 23px;
     text-align: center;
     color: #FFFFFF;
 }
@@ -139,7 +139,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     font-family: 'inglobal';
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 13px;
     line-height: 150%;
     color: #FFFFFF;
     text-align: right;
@@ -147,8 +147,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .header__phone_link {
     background: #083400;
     border-radius: 3px;
-    width: 33px;
-    height: 28px;
+    width: 35px;
+    height: 33px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../css/img/header__phone_link.svg');
 }
 
 
