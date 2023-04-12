@@ -11,56 +11,49 @@ $(window).scroll(function() {
   }
   
   });
+
+  // галерея
+
+$('[data-fancybox="gallery1"]').fancybox({
+});
+$('[data-fancybox="gallery2"]').fancybox({
+});
+
   
+  $('.slider__box').not('.slick-initialized').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 3000,
+      variableWidth: true,
+      arrows: false,
+      dots:false,
+      centerMode:true,
+      mobileFirst: true,
+      responsive: [
+            {
+            breakpoint: 1025,
+            settings: "unslick"
+            }
+      ]
+      });
 
-
-// Открытие меню в header
-
-// $('.header__button_menu').on('click',function () {
-//   $('.mobile__menu').toggleClass('mobile__menu_active');
-//   $('.header__link_box').addClass('header__link_box_active');
-//   $('.consultant_mobile').addClass('consultant_mobile_active');
-// });
-// $('.button_close').on('click',function () {
-//   $('.mobile__menu').removeClass('mobile__menu_active');
-//   $('.header__link_box').removeClass('header__link_box_active');
-//   $('.consultant_mobile').removeClass('consultant_mobile_active');
-// });
-
-// $('.header__link_box_item').on('click',function () {
-//   $('.mobile__menu').removeClass('mobile__menu_active');
-// });
-
-
-// маска для телефонов
-
-$("#inputPhone").mask("+7 (999) 99-99-999");
-
-
-// перенос блоков в header
-// document.addEventListener("DOMContentLoaded", ready);
-// function ready()
-// {
-//   // перенос блоков при загрузке экрана
-//   if ($(window).width() < 1025) {
-//     $('.header__link_box').prependTo('.mobile__menu');
-//     $('.consultant_mobile').prependTo('.mobile__menu');    
-//    }
-//   else {
-//     $('.header__link_box').prependTo('.header');
-//     $('.consultant_mobile').prependTo('.header');
-//   }
-    
-//   // перенос блоков при изменении ширины экрана 
-//   $(window).on('resize', function(){
-//     if ($(window).width() < 1025) {
-//       $('.header__link_box').prependTo('.mobile__menu');
-//       $('.consultant_mobile').appendTo('.mobile__menu');
-//     }
-//     else {
-//       $('.header__link_box').prependTo('.header');
-//       $('.consultant_mobile').appendTo('.header');
-//     }
-//     });
-
-// }
+      $('.merch__slider').not('.slick-initialized').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            variableWidth: true,
+            arrows: false,
+            dots:false,
+            centerMode:true,
+            mobileFirst: true,
+            responsive: [
+                  {
+                  breakpoint: 1025,
+                  settings: "unslick"
+                  }
+            ]
+            });

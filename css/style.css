@@ -298,6 +298,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     display: flex;
     flex-wrap: wrap;
 }
+.slider__box img {
+    width: 240px;
+}
 .slider__block_titleBottom {
     font-family: 'inglobal';
     font-style: normal;
@@ -327,6 +330,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 .merch__slider {
     display: flex;
+}
+.merch__slider img {
+    width: 170px;
 }
 .contacts__block {
     display: flex;
