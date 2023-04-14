@@ -42,7 +42,7 @@ $('[data-fancybox="gallery2"]').fancybox({
       $('.merch__slider').not('.slick-initialized').slick({
             infinite: true,
             slidesToShow: 1,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 3000,
             variableWidth: true,
